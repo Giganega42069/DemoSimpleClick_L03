@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/button" />
+
+        <EditText
+            android:id="@+id/Input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="@string/input" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/DisplayView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/display" />
+
+    <RadioGroup
+        android:id="@+id/rgGenders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/Male"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Male" />
+
+        <RadioButton
+            android:id="@+id/Female"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Female" />
+    </RadioGroup>
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="@string/disabled"
+        android:textOn="@string/enabled" />
+
+</LinearLayout>
+
+
